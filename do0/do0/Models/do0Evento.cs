@@ -20,6 +20,15 @@ namespace do0.Models
         public string do0Avatar { get; set; }
         [Display(Name = "NOME DO USUÁRIO")]
         public string UserName { get; set; }
+
+        [Display(Name = "TIPO DE HOMENAGEM")]
+        public int do0TipoEventoId { get; set; }
+        public virtual do0TipoEvento do0TipoEventos { get; set; }
+
+        [Display(Name = "TIPO DE PAGAMENTO")]
+        public int do0EventoPagamentoId { get; set; }
+        public virtual do0EventoPagamento do0EventoPagamentos { get; set; }
+
         [Display(Name = "DATA DO EVENTO")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         [DataType(DataType.Date, ErrorMessage = "Data em formato inválido")]
@@ -31,8 +40,7 @@ namespace do0.Models
         public string ResponsavelEvento { get; set; }
         [Display(Name = "NOME DO HOMENAGEADO")]
         public string NomeHomenageado { get; set; }
-        [Display(Name = "TIPO DE HOMENAGEM")]
-        public string TipoHomenagem { get; set; }
+
 
         [Display(Name = "CPF")]
         public string CPF { get; set; }

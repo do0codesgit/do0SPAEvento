@@ -1,0 +1,135 @@
+﻿@model IEnumerable<do0.Models.do0Evento>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.do0EventoPagamentos.NomePagamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.do0TipoEventos.NomeEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusDoEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.do0Avatar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCompleto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResponsavelEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeHomenageado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Identidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observacoes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.do0EventoPagamentos.NomePagamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.do0TipoEventos.NomeEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusDoEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataCadastro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.do0Avatar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataNascimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeCompleto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResponsavelEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeHomenageado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CPF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Identidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Endereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observacoes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.do0EventoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.do0EventoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.do0EventoId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,162 @@
+﻿@model do0.Models.do0Evento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>do0Evento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.do0EventoPagamentos.NomePagamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.do0EventoPagamentos.NomePagamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.do0TipoEventos.NomeEvento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.do0TipoEventos.NomeEvento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusDoEvento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusDoEvento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCadastro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.do0Avatar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.do0Avatar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResponsavelEvento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResponsavelEvento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeHomenageado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeHomenageado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Identidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Identidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacoes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacoes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.do0EventoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

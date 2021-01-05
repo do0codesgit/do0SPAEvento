@@ -1,0 +1,66 @@
+﻿@model do0.Models.do0EventoPagamento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>do0EventoPagamento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomePagamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomePagamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacoes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacoes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailSandbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailSandbox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SenhaSandbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SenhaSandbox)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.do0EventoPagamentoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
